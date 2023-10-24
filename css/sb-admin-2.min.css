@@ -7060,7 +7060,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-    background-color: var(--blue) !important
+    background-color: #ffffff00 !important
 }
 
 .bg-video {
@@ -7155,7 +7155,7 @@ button.bg-dark:hover {
 }
 
 .bg-white {
-    background-color: #fff !important
+    background-color: rgb(58 59 69) !important
 }
 
 .bg-transparent {
@@ -8411,11 +8411,11 @@ button.bg-dark:hover {
 }
 
 .shadow-sm {
-    box-shadow: 0 .125rem .25rem 0 rgba(58, 59, 69, .2) !important
+    box-shadow: 0 .125rem .25rem 0 rgba(58, 59, 69, .15) !important
 }
 
 .shadow {
-    box-shadow: 0 .15rem 1.75rem 0 rgba(58, 59, 69, .15) !important
+    box-shadow: 0 .15rem 1.75rem 0 rgb(58 59 69) !important
 }
 
 .shadow-lg {
@@ -11966,7 +11966,7 @@ a:focus {
 }
 
 .sidebar-dark hr.sidebar-divider {
-    border-top: 1px solid rgba(255, 255, 255, .15)
+    border-top: 1px solid #2653d4
 }
 
 .sidebar-dark .sidebar-heading {
