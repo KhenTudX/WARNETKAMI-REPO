@@ -11414,9 +11414,14 @@ a:focus {
 }
 
 .sidebar .nav-item .nav-link .img-profile,
-.topbar .nav-item .nav-link .img-profile {
+.topbar .nav-item .nav-link .img-profile{
     height: 2rem;
     width: 2rem
+}
+
+.img-profile2,img-profile2{
+    height:100px;
+    witdh:100px;
 }
 
 .topbar {

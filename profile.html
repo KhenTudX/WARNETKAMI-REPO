@@ -43,10 +43,20 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link" href="blank.html">
+                <a class="nav-link" href="profile.html">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Profile</span></a>
+            </li>
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item">
+                <a class="nav-link" href="b4.html">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Home</span></a>
             </li>
+            
 
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
@@ -181,8 +191,7 @@
                                 </h6>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_1.svg"
-                                            alt="...">
+                                        <img class="rounded-circle"  src="img/undraw_profile_1.svg" style="height:100px; width:100px;" alt="...">
                                         <div class="status-indicator bg-success"></div>
                                     </div>
                                     <div class="font-weight-bold">
@@ -193,8 +202,7 @@
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_2.svg"
-                                            alt="...">
+                                        <img class="rounded-circle" src="img/undraw_profile_2.svg" alt="...">
                                         <div class="status-indicator"></div>
                                     </div>
                                     <div>
@@ -205,8 +213,7 @@
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_3.svg"
-                                            alt="...">
+                                        <img class="rounded-circle" src="img/undraw_profile_3.svg" alt="...">
                                         <div class="status-indicator bg-warning"></div>
                                     </div>
                                     <div>
@@ -237,18 +244,17 @@
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
-                                <img class="img-profile rounded-circle"
-                                    src="img/undraw_profile.svg">
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">User</span>
+                                <img class="img-profile rounded-circle" src="img/undraw_profile.svg">
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="userDropdown">
-                                <a class="dropdown-item" href="#">
+                                <a class="dropdown-item" href="profile.html">
                                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Profile
                                 </a>
-                                <a class="dropdown-item" href="#">
+                                <a class="dropdown-item" href="b3.html">
                                     <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Settings
                                 </a>
@@ -273,86 +279,17 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800">Daftar Pesanan</h1>
-                    <form>
-                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                        <thead>
-                            <tr>
-                                <th>Name</th>
-                                <th>No.Meja</th>
-                                <th>Makanan</th>
-                                <th>QTY</th>
-                                <th>Status</th>
-                            </tr>
-                        </thead>
-                        <tfoot>
-                            <tr>
-                                <th>Name</th>
-                                <th>No.Meja</th>
-                                <th>Makanan</th>
-                                <th>QTY</th>
-                                <th>Status</th>
-                                
-                            </tr>
-                        </tfoot>
-                        <tbody>
-                            <tr>
-                                <td>Tiger Nixon</td>
-                                <td>1C</td>
-                                <td>Aqua</td>
-                                <td>2</td>
-                                <td><input type="checkbox" id="a"></td>
-                            </tr>
-                            <tr>
-                                <td>Garrett Winters</td>
-                                <td>4C</td>
-                                <td>Aqua</td>
-                                <td>1</td>
-                                <td><input type="checkbox"id="a"></td>
-                            </tr>
-                            <tr>
-                                <td>Ashton Cox</td>
-                                <td>2C</td>
-                                <td>French Fries</td>
-                                <td>1</td>
-                                <td><input type="checkbox" id="a"></td>
-                            </tr>
-                            <tr>
-                                <td>Cedric Kelly</td>
-                                <td>4CAN</td>
-                                <td>Salmon...</td>
-                                <td>2</td>
-                                <td><input type="checkbox" id="a"></td>
-                            </tr>
-                            <tr>
-                                <td>Airi Satou</td>
-                                <td>1CAN</td>
-                                <td>Salmon...</td>
-                                <td>5</td>
-                                <td><input type="checkbox" id="a"></td>
-                            </tr>
-                            <tr>
-                                <td>Brielle Williamson</td>
-                                <td>7C</td>
-                                <td>Spagetti</td>
-                                <td>2</td>
-                                <td><input type="checkbox" id="a"></td>
-                            </tr>
-                            <tr>
-                                <td>Herrod Chandler</td>
-                                <td>6CAN</td>
-                                <td>Spagetti</td>
-                                <td>1</td>
-                                <td><input type="checkbox" id="a"></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                        <button type="submit">CONFIRM</button>
-                    </form>
-
-
-
-
+                    <h1 class="h3 mb-4 text-gray-800">Profile</h1>
+                  
+                    <img class="img-profile2 rounded-circle" src="img/undraw_profile.svg">
+                     <h3><span style="color:black"class="mr-2 d-none d-lg-inline small">Nama: User </span></h3>
+                        <h3><span  style="color:black" class="mr-2 d-none d-lg-inline text--600 small">ID : 12345678 </span></h3>
+                        
+                        <h3><span style="color:black "  class="mr-2 d-none d-lg-inline text-black-600 small">Member : -/- </span></h3>
+                       <h3><span style="color:black "  class="mr-2 d-none d-lg-inline text-black-600 small">Jmlh.Dtng : -/- </span></h3>
+                       <h3><span style="color:black "  class="mr-2 d-none d-lg-inline text-black-600 small">Sisa Jam : -/- Menit </span></h3>
+                       
+                  
 
                 </div>
                 <!-- /.container-fluid -->

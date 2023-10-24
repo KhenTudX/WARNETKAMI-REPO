@@ -10630,7 +10630,7 @@ a:focus {
 }
 
 .sidebar-light hr.sidebar-divider {
-  border-top: 1px solid #eaecf4;
+  border-top: 1px solid #2653d4;
 }
 
 .sidebar-light .sidebar-heading {
@@ -10682,7 +10682,7 @@ a:focus {
 }
 
 .sidebar-dark hr.sidebar-divider {
-  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  border-top: 1px solid #2653d4;
 }
 
 .sidebar-dark .sidebar-heading {
