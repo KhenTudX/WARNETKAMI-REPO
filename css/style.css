@@ -30,6 +30,15 @@ h2, .g-price {
   justify-content: space-between;
 }
 
+.containerfooter {
+  width: 24%;
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 12px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
 @media (max-width: 950px) {
   .container {
     display: block;
