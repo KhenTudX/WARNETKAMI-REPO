@@ -639,6 +639,12 @@ pre code {
     margin-left: 5.75rem
 }
 
+.rowSP {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -.75rem;
+    margin-left: 3.75rem
+}
 
 .no-gutters {
     margin-right: 0;
@@ -5100,6 +5106,13 @@ input[type=submit].btn-block {
     padding: .75rem 1.25rem;
     margin-bottom: 0;
     background-color: #ffea02;
+    border-bottom: 1px solid #000000
+}
+
+.card-headerm {
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: #00d1ef;
     border-bottom: 1px solid #000000
 }
 
@@ -12827,4 +12840,12 @@ body.sidebar-toggled footer.sticky-footer {
   @keyframes fadeIn {
     from {opacity: 0;}
     to {opacity:1 ;}
+  }
+  
+  #more {display: none;}
+  
+  .pencil-edit{
+      background: url("../img/pensil.png");
+      width: 50px;
+      height: 50px;
   }

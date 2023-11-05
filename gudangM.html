@@ -9,7 +9,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>-/-</title>
+        <title>SB Admin 2 - Blank</title>
 
         <!-- Custom fonts for this template-->
         <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -37,6 +37,7 @@
                     </div>
                     <div class="sidebar-brand-text mx-3">WARNETKAMI <sup>V.1.2.C</sup></div>
                 </a>
+
                 <!-- Divider -->
                 <hr class="sidebar-divider my-0">
 
@@ -71,7 +72,12 @@
                 </li>
 
                 <!-- Divider -->
-                <hr class="sidebar-divider">
+                <hr class="sidebar-divider d-none d-md-block">
+
+                <!-- Sidebar Toggler (Sidebar) -->
+                <div class="text-center d-none d-md-inline">
+                    <button class="rounded-circle border-0" id="sidebarToggle"></button>
+                </div>
 
             </ul>
             <!-- End of Sidebar -->
@@ -126,7 +132,7 @@
                                         </div>
                                         <div>
                                             <div class="text-truncate">Bawang (+10 Lusin) "Masak bener dikit makannya"</div>
-                                            <div class="small text-gray-500">ADMIN </div>
+                                            <div class="small text-gray-500">ADMIN #0002</div>
                                         </div>
                                     </a>
                                     <a class="dropdown-item d-flex align-items-center" href="#">
@@ -154,7 +160,6 @@
                                 </div>
                             </li>
 
-
                             <div class="topbar-divider d-none d-sm-block"></div>
 
                             <!-- Nav Item - User Information -->
@@ -162,8 +167,19 @@
                                 <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <span class="mr-2 d-none d-lg-inline text-gray-600 small">S.User #0002</span>
-                                    <img class="img-profile rounded-circle" src="img/undraw_profile.svg">
+                                    <img class="img-profile rounded-circle"
+                                         src="img/undraw_profile.svg">
                                 </a>
+                                <!-- Dropdown - User Information -->
+                                <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                     aria-labelledby="userDropdown">
+
+
+                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                        <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                        Logout
+                                    </a>
+                                </div>
                             </li>
 
                         </ul>
@@ -175,121 +191,121 @@
                     <div class="container-fluid">
 
                         <!-- Page Heading -->
-                        <h1 class="h3 mb-4 text-gray-800">Overview</h1>
+                        <h1 class="h3 mb-4 text-gray-800">Gudang</h1>
+                        <form>
+                            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Tnggl Beli</th>
+                                        <th>Tnggl Exp</th>
+                                        <th>QTY</th>
+                                        <th>Update(Sudden/Human Error)</th>
+                                    </tr>
+                                </thead>
+                                <tfoot>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Tnggl Beli</th>
+                                        <th>Tnggl Exp</th>
+                                        <th>QTY</th>
+                                        <th>Update(Sudden/Human Error)</th>
 
-
-                        <div class="row">
-
-
-                            <!-- Content Column -->
-                            <div class="col-lg-6 mb-4">
-
-                                <!-- Project Card Example -->
-                                <div class="card shadow mb-4">
-                                    <div class="card-header py-3">
-                                        <h6 class="m-0 font-weight-bold text-primary">Overview (November)</h6>
-                                    </div>
-                                    <div class="card-body">
-                                        <h4 class="small font-weight-bold">Kapasitas Server <span
-                                                class="float-right">74%</span></h4>
-                                        <div class="progress mb-4">
-                                            <div class="progress-bar bg-danger" role="progressbar" style="width: 74%"
-                                                 aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                        <h4 class="small font-weight-bold">Pelanggan (Bulanan)<span
-                                                class="float-right">320.961 / 625.993</span></h4>
-                                        <div class="progress mb-4">
-                                            <div class="progress-bar bg-warning" role="progressbar" style="width: 51%"
-                                                 aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                        <h4 class="small font-weight-bold">Review <span class="float-right">Average Rate :
-                                                4,2</span></h4>
-                                        <div class="progress mb-4">
-                                            <div class="progress-bar" role="progressbar" style="width: 89%"
-                                                 aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                        <h4 class="small font-weight-bold">Income <span class="float-right">Rp.3.915.000,00
-                                                / Rp.2.805.000,00</span></h4>
-                                        <div class="progress mb-4">
-                                            <div class="progress-bar bg-info" role="progressbar" style="width: 100%"
-                                                 aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-
-                                    </div>
-                                </div>
-
-
-
-                                <!-- Project Card Example -->
-                                <div class="card shadow mb-4">
-                                    <div class="card-header py-3">
-                                        <h6 class="m-0 font-weight-bold text-primary">Overview (Oktober)</h6>
-                                    </div>
-                                    <div class="card-body">
-                                        <h4 class="small font-weight-bold">Kapasitas Server <span
-                                                class="float-right">23%</span>
-                                        </h4>
-                                        <div class="progress mb-4">
-                                            <div class="progress-bar bg-danger" role="progressbar" style="width: 23%"
-                                                 aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                        <h4 class="small font-weight-bold">Pelanggan (Bulanan)<span
-                                                class="float-right">625.993
-                                                / 455.000</span></h4>
-                                        <div class="progress mb-4">
-                                            <div class="progress-bar bg-warning" role="progressbar" style="width: 100%"
-                                                 aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                        <h4 class="small font-weight-bold">Review <span class="float-right">Average Rate :
-                                                4,3</span></h4>
-                                        <div class="progress mb-4">
-                                            <div class="progress-bar" role="progressbar" style="width: 90%"
-                                                 aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                        <h4 class="small font-weight-bold">Income <span class="float-right">Rp.2.805.000,00
-                                                / Rp.1.250.000,00 </span></h4>
-                                        <div class="progress mb-4">
-                                            <div class="progress-bar bg-info" role="progressbar" style="width: 58%"
-                                                 aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                                <!-- Area Chart -->
-
-                                <div class="card shadow mb-4">
-                                    <!-- Card Header - Dropdown -->
-                                    <div
-                                        class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                        <h6 class="m-0 font-weight-bold text-primary">Earnings Overview</h6>
-                                        <div class="dropdown no-arrow">
-                                            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                                    </tr>
+                                </tfoot>
+                                <tbody>
+                                    <tr>
+                                        <td>Jahe</td>
+                                        <td>1/1/1111</td>
+                                        <td>1/1/1111</td>
+                                        <td>2</td>
+                                        <td><input placeholder="Jumlah" type="number" id="a"><input placeholder="Pesan" type="name" id="a"><a href="#" class="btn btn-success btn-circle">
+                                                <i class="fas fa-check"></i>
                                             </a>
-                                            <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
-                                                 aria-labelledby="dropdownMenuLink">
-                                                <div class="dropdown-header">Dropdown Header:</div>
-                                                <a class="dropdown-item" href="#">Action</a>
-                                                <a class="dropdown-item" href="#">Another action</a>
-                                                <div class="dropdown-divider"></div>
-                                                <a class="dropdown-item" href="#">Something else here</a>
-                                            </div>
-                                        </div>
-                                    </div>
+                                            <a href="#" class="btn btn-danger btn-circle">
+                                                <i class="fas fa-trash"></i>
+                                            </a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Garam</td>
+                                        <td>1/1/1111</td>
+                                        <td>1/1/1111</td>
+                                        <td>1</td>
+                                        <td><input placeholder="Jumlah" type="number" id="a"><input placeholder="Pesan" type="name" id="a"><a href="#" class="btn btn-success btn-circle">
+                                                <i class="fas fa-check"></i>
+                                            </a>
+                                            <a href="#" class="btn btn-danger btn-circle">
+                                                <i class="fas fa-trash"></i>
+                                            </a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Merica</td>
+                                        <td>1/1/1111</td>
+                                        <td>1/1/1111</td>
+                                        <td>1</td>
+                                        <td><input placeholder="Jumlah" type="number" id="a"><input placeholder="Pesan" type="name" id="a"><a href="#" class="btn btn-success btn-circle">
+                                                <i class="fas fa-check"></i>
+                                            </a>
+                                            <a href="#" class="btn btn-danger btn-circle">
+                                                <i class="fas fa-trash"></i>
+                                            </a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ayam</td>
+                                        <td>1/1/1111</td>
+                                        <td>1/1/1111</td>
+                                        <td>2</td>
+                                        <td><input placeholder="Jumlah" type="number" id="a"><input placeholder="Pesan" type="name" id="a"><a href="#" class="btn btn-success btn-circle">
+                                                <i class="fas fa-check"></i>
+                                            </a>
+                                            <a href="#" class="btn btn-danger btn-circle">
+                                                <i class="fas fa-trash"></i>
+                                            </a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Kecap Manis</td>
+                                        <td>1/1/1111</td>
+                                        <td>1/1/1111</td>
+                                        <td>5</td>
+                                        <td><input placeholder="Jumlah" type="number" id="a"><input placeholder="Pesan" type="name" id="a"><a href="#" class="btn btn-success btn-circle">
+                                                <i class="fas fa-check"></i>
+                                            </a>
+                                            <a href="#" class="btn btn-danger btn-circle">
+                                                <i class="fas fa-trash"></i>
+                                            </a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bawang Putih</td>
+                                        <td>1/1/1111</td>
+                                        <td>1/1/1111</td>
+                                        <td>2</td>
+                                        <td><input placeholder="Jumlah" type="number" id="a"><input placeholder="Pesan" type="name" id="a"><a href="#" class="btn btn-success btn-circle">
+                                                <i class="fas fa-check"></i>
+                                            </a>
+                                            <a href="#" class="btn btn-danger btn-circle">
+                                                <i class="fas fa-trash"></i>
+                                            </a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bawang Merah</td>
+                                        <td>1/1/1111</td>
+                                        <td>1/1/1111</td>
+                                        <td>1</td>
+                                        <td><input placeholder="Jumlah" type="number" id="a"><input placeholder="Pesan" type="name" id="a"><a href="#" class="btn btn-success btn-circle">
+                                                <i class="fas fa-check"></i>
+                                            </a>
+                                            <a href="#" class="btn btn-danger btn-circle">
+                                                <i class="fas fa-trash"></i>
+                                            </a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
 
-                                    <!-- Card Body -->
-                                    <div class="card-body">
-                                        <div class="chart-area">
-                                            <canvas id="myAreaChart"></canvas>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        </form>
 
 
-                        </div>
+
+
 
                     </div>
                     <!-- /.container-fluid -->
@@ -301,7 +317,7 @@
                 <footer class="sticky-footer bg-white">
                     <div class="container my-auto">
                         <div class="copyright text-center my-auto">
-                            <span>Copyright &copy; Your Website 2020</span>
+                            <span>Copyright &copy; WARNETKAMI 2023</span>
                         </div>
                     </div>
                 </footer>
@@ -347,13 +363,6 @@
 
         <!-- Custom scripts for all pages-->
         <script src="js/sb-admin-2.min.js"></script>
-
-        <!-- Page level plugins -->
-        <script src="vendor/chart.js/Chart.min.js"></script>
-
-        <!-- Page level custom scripts -->
-        <script src="js/demo/chart-area-demo.js"></script>
-        <script src="js/demo/chart-pie-demo.js"></script>
 
     </body>
 
